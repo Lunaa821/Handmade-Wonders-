@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Sản phẩm</title>
+    <link rel="stylesheet" href="C:\Users\phamt\Desktop\handmade\css\style.css">
+</head>
+<body>
+    <header>
+        <h1>Quản lý Sản phẩm</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="manage-users.html">Quản lý Người dùng</a></li>
+                <li><a href="manage-products.html">Quản lý Sản phẩm</a></li>
+                <li><a href="#" onclick="logout()">Đăng Xuất</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Danh sách Sản phẩm</h2>
+            <button onclick="addProduct()">Thêm Sản phẩm</button>
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Sản phẩm sẽ được thêm vào đây -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script>
+        function addProduct() {
+            // Hàm thêm sản phẩm
+        }
+
+        function editProduct(productId) {
+            // Hàm chỉnh sửa sản phẩm
+        }
+
+        function deleteProduct(productId) {
+            // Hàm xóa sản phẩm
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản Trị</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h2 {
+            color: #264653;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #264653;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #e76f51;
+        }
+    </style>
+</head>
+<body>
+    <h2>Trang Quản Trị Admin</h2>
+    <p>Chào mừng Admin đến với trang quản trị!</p>
+    <button class="btn" onclick="logout()">Đăng Xuất</button>
+
+    <script>
+        // Kiểm tra xem có phải admin đã đăng nhập hay chưa
+        if (localStorage.getItem('loggedInUser') !== 'admin') {
+            window.location.href = 'login.html';  // Nếu không phải admin, chuyển hướng về trang đăng nhập
+        }
+
+        function logout() {
+            localStorage.removeItem('loggedInUser');
+            window.location.href = 'login.html';  // Đăng xuất và quay lại trang đăng nhập
+        }
+    </script>
+</body>
+</html>
